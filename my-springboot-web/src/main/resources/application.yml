@@ -1,0 +1,40 @@
+server:
+  port: ${jdcloud.market.serverPort}
+
+spring:
+  profiles:
+    active: @profileActive@
+  application:
+    name: my-spring-boot-@profileActive@
+
+#  #处理@ResponseBody的日期
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+
+#mybatis:
+#        type-aliases-package: com.jdcloud.market.service.domain
+#        mapper-locations: classpath:mapper/*.xml
+mapper:
+#如果配置了mappers，则只注册配置的mapper，否则注册所有继承Mapper的接口
+#    mappers:
+#        - MarketServiceMapper
+#    not-empty: false
+#    identity: MYSQL
+#pagehelper:
+#    helperDialect: mysql
+#    reasonable: true
+#    supportMethodsArguments: true
+#    params: count=countSql
+
+swagger:
+  basePackage: com.xm.springboot.controller
+  title: 自定义的接口文档
+  description: my-spring-boot
+  contact: my-spring-boot
+  version: v1.0
+
+#用Apache的HTTP Client替换Feign原始的http client, 从而获取连接池、超时时间等与性能息息相关的控制能力
+feign:
+  httpclient:
+    enabled: true
