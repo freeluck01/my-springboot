@@ -12,7 +12,6 @@
     <artifactId>my-springboot-web</artifactId>
     <packaging>jar</packaging>
 
-
     <profiles>
         <profile>
             <id>local</id>

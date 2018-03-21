@@ -15,6 +15,7 @@ public class DemoController {
 
     @RequestMapping("/helloworld")
     public String helloworld(){
-        return "helloworld";
+        int i= 3/0;
+        return "helloworld demo";
     }
 }

@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * Spring Boot工程入口
+ * Spring Boot工程启动入口
  * author: caoxingming
  * date: 2018/1/25
  * time: 21:13
@@ -18,7 +18,7 @@ public class EngineStart {
         ApplicationContext context = SpringApplication.run(EngineStart.class, args);
         String[] activeProfiles = context.getEnvironment().getActiveProfiles();
         for (String activeProfile : activeProfiles) {
-            System.out.println("使用的profile为：" + activeProfile);
+            System.out.println(">>>>>>>>>>使用的profile为：" + activeProfile);
         }
     }
 }
