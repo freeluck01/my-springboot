@@ -10,8 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
  * time: 21:13
  * To change this template use File | Settings | Editor | File and Code Templates.
  */
-@SpringBootApplication
-@ComponentScan(basePackages = {"com.xm.springboot"})
+@SpringBootApplication(scanBasePackages = {"com.xm.springboot"})
 public class EngineStart {
 
     public static void main(String[] args) {

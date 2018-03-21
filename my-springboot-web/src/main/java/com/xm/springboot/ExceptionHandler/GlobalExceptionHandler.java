@@ -18,7 +18,8 @@ import java.util.Map;
 public class GlobalExceptionHandler {
     @ExceptionHandler({RuntimeException.class})
     @ResponseBody
-    public Map<String, String> runtimeExceptionHandler(){
+    public Map<String, String> runtimeExceptionHandler(RuntimeException e){
+        e.printStackTrace();
         Map<String, String> errorMap = new HashMap<>();
         errorMap.put("errorCode","500");
         errorMap.put("errorMsg","系统后台发生错误");

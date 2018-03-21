@@ -14,8 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     @RequestMapping("/helloworld")
-    public String helloworld(){
-        int i= 3/0;
-        return "helloworld demo";
+    public String helloWorld(String arg){
+        if("error".equals(arg)){
+            int i= 3/0;
+        }
+
+        return "hello world";
     }
 }
