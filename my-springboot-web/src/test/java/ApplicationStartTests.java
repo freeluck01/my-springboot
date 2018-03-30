@@ -26,7 +26,7 @@ public class ApplicationStartTests {
     public void selectOne() throws Exception {
         Demo demo = new Demo();
         demo.setName("xuanxuan");
-        demoMapper.insert(demo);
+//        demoMapper.insert(demo);
         Demo u = demoMapper.selectOne(demo);
         Assert.assertEquals("xuanxuan", u.getName());
     }

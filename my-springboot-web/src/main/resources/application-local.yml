@@ -1,6 +1,6 @@
 jdcloud:
   market:
-    serverPort: 80
+    serverPort: 8080
 
 # 微服务客户端设置
 eureka:
@@ -37,14 +37,18 @@ spring:
     #归还连接时检测可用性
     testOnReturn: false
 
+#通用Mapper配置
+#mapper:
+#  mappers:
+#    - tk.mybatis.mapper.common.Mapper
+#    - tk.mybatis.mapper.common.Mapper2
+#  notEmpty: true
+
 #可以调用的微服务
 jdcloudmarket:
   orderservice: order-service-dev
   fuwuservice: fuwu-service-dev
   billservice: bill-service-dev
-  basicservice: basic-service-dev
-  userauthservice: userauth-service-dev
-  ossservice: oss-service-dev
-  cacheservice: cache-service-dev
+
 
 

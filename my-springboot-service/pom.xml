@@ -12,5 +12,18 @@
     <artifactId>my-springboot-service</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.xm.springboot</groupId>
+            <artifactId>my-springboot-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.xm.springboot</groupId>
+            <artifactId>my-springboot-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

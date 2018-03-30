@@ -14,7 +14,7 @@
             <!--缺省值
             <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>-->
             <!--自定义父类-->
-            <property name="mappers" value="com.xm.springboot.mapper.MyMapper"/>
+            <property name="mappers" value="com.xm.springboot.mapper.MyBaseMapper"/>
         </plugin>
 
         <!-- 为生成的Java模型创建一个toString方法 -->

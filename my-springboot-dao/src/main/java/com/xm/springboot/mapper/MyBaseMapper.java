@@ -9,5 +9,5 @@ import tk.mybatis.mapper.common.Mapper;
  * time: 15:51
  * To change this template use File | Settings | Editor | File and Code Templates.
  */
-public interface MyMapper<T> extends Mapper<T>,IdsMapper<T> {
+public interface MyBaseMapper<T> extends Mapper<T>,IdsMapper<T> {
 }

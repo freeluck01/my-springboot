@@ -1,5 +1,9 @@
 package com.xm.springboot.controller;
 
+import com.xm.springboot.domain.Demo;
+import com.xm.springboot.service.IDemoService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/demo")
 public class DemoController {
+    @Autowired
+    IDemoService demoService;
 
     @RequestMapping("/helloworld")
     public String helloWorld(String arg){
@@ -20,5 +26,13 @@ public class DemoController {
         }
 
         return "hello world";
+    }
+
+    @RequestMapping("/one/{name}")
+    public Demo demo(@PathVariable String name){
+        Demo d = new Demo();
+        d.setName("xuanxuan");
+        Demo demo = demoService.selectOne(d);
+        return demo;
     }
 }
