@@ -1,7 +1,8 @@
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import tk.mybatis.spring.annotation.MapperScan;
+//import tk.mybatis.spring.annotation.MapperScan; //tk.mybatis:mapper选4.0.0时报错
 
 /**
  * Spring Boot工程启动入口
@@ -10,8 +11,8 @@ import tk.mybatis.spring.annotation.MapperScan;
  * time: 21:13
  * To change this template use File | Settings | Editor | File and Code Templates.
  */
-@SpringBootApplication(scanBasePackages = "com.xm.springboot")
-@MapperScan(value = "com.xm.springboot.mapper*")//tk的MapperScan
+@SpringBootApplication(scanBasePackages = {"com.xm.springboot"})
+@MapperScan(basePackages = {"com.xm.springboot.mapper*"})
 public class ApplicationStart {
 
     public static void main(String[] args) {

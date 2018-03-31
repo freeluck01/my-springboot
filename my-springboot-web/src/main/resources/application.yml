@@ -18,14 +18,15 @@ mybatis:
 mapper:
 #如果配置了mappers，则只注册配置的mapper，否则注册所有继承Mapper的接口
     mappers:
-        - MarketServiceMapper
+        - com.xm.springboot.mapper.MyBaseMapper
     not-empty: false
     identity: MYSQL
-#pagehelper:
-#    helperDialect: mysql
-#    reasonable: true
-#    supportMethodsArguments: true
-#    params: count=countSql
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
 
 #swagger:
 #  basePackage: com.xm.springboot.controller
