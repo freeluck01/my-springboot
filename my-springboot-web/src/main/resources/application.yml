@@ -21,6 +21,7 @@ mapper:
         - com.xm.springboot.mapper.MyBaseMapper
     not-empty: false
     identity: MYSQL
+    ORDER: BEFORE
 
 pagehelper:
     helperDialect: mysql

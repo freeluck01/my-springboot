@@ -13,4 +13,8 @@
     <result column="orgid" property="orgid" jdbcType="VARCHAR" />
     <result column="depart" property="depart" jdbcType="VARCHAR" />
   </resultMap>
+
+  <select id="selectOneDemo" resultMap="BaseResultMap">
+    SELECT * from demo where name=#{name}
+  </select>
 </mapper>

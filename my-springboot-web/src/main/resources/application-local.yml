@@ -37,13 +37,6 @@ spring:
     #归还连接时检测可用性
     testOnReturn: false
 
-#通用Mapper配置
-#mapper:
-#  mappers:
-#    - tk.mybatis.mapper.common.Mapper
-#    - tk.mybatis.mapper.common.Mapper2
-#  notEmpty: true
-
 #可以调用的微服务
 jdcloudmarket:
   orderservice: order-service-dev

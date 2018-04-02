@@ -2,6 +2,7 @@ package com.xm.springboot.domain;
 
 import javax.persistence.*;
 
+@Table(name = "demo")
 public class Demo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
