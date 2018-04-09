@@ -1,5 +1,5 @@
 server:
-  port: ${jdcloud.market.serverPort}
+  port: ${my.springboot.serverPort}
 
 spring:
   profiles:
@@ -13,12 +13,12 @@ spring:
 #    time-zone: GMT+8
 
 mybatis:
-    type-aliases-package: com.xm.springboot.domain
     mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: com.xm.springboot.domain
 mapper:
 #如果配置了mappers，则只注册配置的mapper，否则注册所有继承Mapper的接口
-    mappers:
-        - com.xm.springboot.mapper.MyBaseMapper
+#    mappers:
+#        - com.xm.springboot.mapper.MyBaseMapper
     not-empty: false
     identity: MYSQL
     ORDER: BEFORE

@@ -1,11 +1,11 @@
-jdcloud:
-  market:
+my:
+  springboot:
     serverPort: 8080
 
 # 微服务客户端设置
-eureka:
-  client:
-    serviceUrl:
+#eureka:
+#  client:
+#    serviceUrl:
 #      defaultZone: http://192.168.149.41:8761/eureka/
 
 spring:
@@ -38,10 +38,10 @@ spring:
     testOnReturn: false
 
 #可以调用的微服务
-jdcloudmarket:
-  orderservice: order-service-dev
-  fuwuservice: fuwu-service-dev
-  billservice: bill-service-dev
+#jdcloudmarket:
+#  orderservice: order-service-dev
+#  fuwuservice: fuwu-service-dev
+#  billservice: bill-service-dev
 
 
 
